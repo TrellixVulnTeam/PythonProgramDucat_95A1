@@ -1,0 +1,11 @@
+#131.Read a Text File and Print all the Numbers Present in the Text File .??
+
+fname = input("Enter file name: ")
+
+with open(fname, 'r') as f:
+    for line in f:
+        words = line.split()
+        for i in words:
+            for letter in i:
+                if (letter.isdigit()):
+                    print(letter)

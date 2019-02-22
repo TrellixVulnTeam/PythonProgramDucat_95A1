@@ -1,0 +1,2659 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial Black;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.10240}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\widctlpar\sa200\sl276\slmult1\f0\fs22 # practise python programms in pychram runup...??\par
+\fs32\par
+\par
+\par
+#1. combination of three number if two no are same then print combination of numbers..??\par
+\par
+\par
+n = int(input("enter the no:"))\par
+m = int(input("enter the no:"))\par
+o = int(input("enter the no:"))\par
+for i in range(1,n+1):\par
+for j in range(1,m+1):\par
+for k in range(1,o+1):\par
+if (i==j or j==k or k==i):\par
+print(i,j,k)\par
+\par
+\par
+#2. average of given list ..??\par
+\par
+\par
+\fs24 list = []\par
+n= int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+m = int(input("enter the no:"))\par
+list.append(m)\par
+# print(list)\par
+sum=0\par
+for j in list:\par
+# print(j)\par
+sum=sum+j\par
+# print(sum)\par
+avg = (sum)/n\par
+print("average of list =",avg)\par
+\fs32\par
+\par
+\par
+\par
+\par
+#3. Exchange the Values of Two Numbers Without Using a Temporary Variable ..??\par
+\par
+\par
+\par
+a = int(input("enter the 1st no:"))\par
+b = int(input("enter the 2nd no:"))\par
+b = (a+b)-a\par
+a = (a+b)-b\par
+print("swap the value a =",b)\par
+print("swap the value b =",a)\par
+\fs24\par
+\par
+\par
+\fs32\par
+\par
+\par
+\par
+\par
+\par
+#4. Read a Mumber n and Compute n+nn+nnn ..??\par
+\par
+\par
+n = int(input("enter the no:"))\par
+A = n+n**2+n**3\par
+print("compute the value = ",A)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#5.  Reverse a Given Number ..??\par
+\par
+\par
+n = int(input("enter the number:"))\par
+temp = n\par
+sum = 0\par
+while n>0:\par
+digit = n%10\par
+sum = sum*10 + digit\par
+n = n//10\par
+print("reverse of the number:",sum)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#6. Check Whether a Number is Positive or Negative ..??\par
+\par
+\par
+n= int(input("enter the number:"))\par
+if n > 0:\par
+print("no. is positive")\par
+elif n==0:\par
+print("no. is the = zero")\par
+else:\par
+print("no. is negative")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#7. five subject mark in user input find the result and grade both using by conditions..??\par
+\par
+hindi= int(input("enter the mark of hindi:"))\par
+english = int(input("enter the mark of english:"))\par
+physics = int(input("enter the mark of physics:"))\par
+chemistry = int(input("enter the mark of chemistry:"))\par
+maths = int(input("enter the mark of maths:"))\par
+result = (hindi+english+physics+chemistry+maths)/5\par
+print(result)\par
+if (result>0 and result<33):\par
+print("fail\\nf grade.")\par
+elif (result >=33  and result < 45):\par
+print("pass\\ne grade.")\par
+elif (result>=45 and result<60):\par
+print("pass\\nd grade.")\par
+elif (result>=60 and result<70):\par
+print("pass\\nc grade.")\par
+elif(result>=70 and result<80):\par
+print("pass\\nb grade.")\par
+elif(result>=80 and result<90):\par
+print("pass\\na grade.")\par
+elif(result<=100):\par
+print("pass\\ns grade.")\par
+else:\par
+print("invalid result.")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#8. Print all Numbers in a Range Divisible by a Given Number...??\par
+\par
+\par
+n =int(input("enter the no of term using the range value."))\par
+m = int(input("enter the divisible given the no."))\par
+for i in range(1,n+1):\par
+if i % m==0:\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#9.  Read Two Numbers and Print Their Quotient and Remainder ..??\par
+\par
+\par
+p= int(input("enter the no:"))\par
+q= int(input("enter the no:"))\par
+Que=p//q\par
+print("quetioent of the two numbers:",Que)\par
+rem=p%q\par
+print("remainder the two numbers:",rem)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#10. Print Odd Numbers Within a Given Range ...??\par
+\par
+\par
+n= int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+if i%2!=0:\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#11.  Find the Sum of Digits in a Number ..??\par
+\par
+\par
+n= int(input("enter the no of term:"))\par
+temp=n\par
+sum=0\par
+while n>0:\par
+digit=temp%10\par
+sum=sum+digit\par
+temp=temp//10\par
+print(sum)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#12.  Find the Smallest Divisor of an Integer ..??\par
+\par
+\par
+\par
+\par
+list=[]\par
+n= int(input("enter the no of range:"))\par
+for i in range(1,n+1):\par
+if n%i==0:\par
+#  print(i)\par
+list.append(i)\par
+list.sort()\par
+# print(list)\par
+print(list[0])\par
+\par
+\par
+\par
+\par
+\par
+#13. Count the Number of Digits in a Number  ..??\par
+\par
+\par
+n= int(input("enter the no:"))\par
+temp=n\par
+count=0\par
+while n>0:\par
+digit=n%10\par
+count=count+1\par
+n=n//10\par
+print(count)\par
+\par
+\par
+\par
+\par
+\par
+\par
+#14.  Check if a Number is a Palindrome ...???\par
+\par
+\par
+n= int(input("enter the no:"))\par
+temp=n\par
+k=n\par
+sum=0\par
+while n > 0:\par
+digit=n%10\par
+sum=sum*10+digit\par
+n=n//10\par
+print(sum)\par
+if sum==k:\par
+print("number is pilendrome.")\par
+else:\par
+print("number is not pilendrome.")\par
+\par
+\par
+\par
+\par
+#15. Print all Integers that Aren't Divisible by Either 2 or 3 and Lie between 1 and 50.\par
+\par
+\par
+\par
+for i in range(1,50):\par
+if (i%2!=0 and i%3!=0):\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#16. Read a Number n And Print the Series "1+2+\'85..+n= " .....???\par
+\par
+\par
+n= int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+if i==n:\par
+print(i)\par
+else:\par
+print(i,end="+")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#17. Read a Number n and Print the Natural Numbers Summation Pattern ..??\par
+\par
+\par
+\par
+n= int(input("enter the no of term:"))\par
+for i in range(1,n+1):\par
+for j in range(1,i+1):\par
+if j==i:\par
+print(j, end='')\par
+else:\par
+print(j, end="+")\par
+print("")\par
+\par
+\par
+\par
+\par
+\par
+#18.  inverted star print....triangle..??\par
+\par
+\par
+n = int(input('Enter no'))\par
+for i in range(1,n+1):\par
+for j in range(i-1,n):\par
+print('*',end=' ')\par
+for k in range(1,i+1):\par
+print(" "*(k), end=' ')\par
+print()\par
+# or other mathods...??\par
+n = int(input('Enter no'))\par
+for i in range(1, n + 1):\par
+print(' '*(i-1),'*'*(n+1-i))\par
+\par
+\par
+\par
+\par
+\par
+#19.  print all print number using eresothenses (chlni) mathod .>>>\par
+\par
+\par
+n=int(input("enter the no:"))\par
+for i in range (2,n+1):\par
+for j in range(2,i):\par
+if i%j==0:\par
+break;\par
+else:\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+#20. print the identity matrix ..??\par
+\par
+\par
+row,col=2,2\par
+for row in range(2):\par
+for col in range(2):\par
+if (row==col):\par
+print("1",end=' ')\par
+else:\par
+print("0",end=" ")\par
+print()\par
+\par
+# or other mathods....??\par
+\par
+\par
+n=int(input("enter the row:"))\par
+m=int(input("enter the col:"))\par
+row,col=n,m\par
+for row in range(n):\par
+for col in range(m):\par
+if (row == col):\par
+print("1", end=' ')\par
+else:\par
+print("0", end=" ")\par
+print()\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#21.  check valid date and incremented month or date .....???\par
+\par
+\par
+n=input("enter the no:")\par
+list= n.split("/")\par
+dd=int(list[0])\par
+mm=int(list[1])\par
+yy=int(list[2])\par
+if (mm==1 or mm==3 or mm==5 or mm==7 or mm==8 or mm==10 or mm==12):\par
+max=31\par
+elif(mm==4 or mm==6 or mm==9 or mm==11):\par
+max=30\par
+elif((yy%4==0 and yy%100!=0)or yy%400==0):\par
+max=29\par
+else:\par
+max=28\par
+if dd>max or dd<1:\par
+print("invalid")\par
+\par
+elif mm>12 or mm<1:\par
+print("invalid")\par
+else:\par
+print("valid")\par
+if (dd==max and mm!=12):\par
+mm=mm+1\par
+dd=1\par
+print(dd, mm, yy)\par
+elif (dd==max and mm==12):\par
+yy=yy+1\par
+mm=1\par
+dd=1\par
+print(dd,mm,yy)\par
+else:\par
+dd=dd+1\par
+print(dd,mm,yy)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#22. Simple Interest  and ammount find the Given all the Required Values..??\par
+\par
+\par
+\par
+p= float(input("enter the principle"))\par
+r= float(input("enter the rate of interest"))\par
+t= float(input("enter the time"))\par
+SI= (p*r*t)/100\par
+print("simple interest =",SI)\par
+A= p+SI\par
+print("ammount = ",A)\par
+\par
+\par
+\par
+\par
+\par
+\par
+#23. Check Whether a Given Year is a Leap Year ..??\par
+\par
+\par
+\par
+year=int(input("enter the year :"))\par
+if ((year%4==0 and year%100!=0)or year%400==0):\par
+print("this year is leap year.")\par
+else:\par
+print("this year is not leap year.")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#24.  Read Height in Centimeters and then Convert the Height to Feet and Inches ...??\par
+\par
+\par
+\par
+height= float(input("enter the height of the men/women: "))\par
+feet2=height/(30.5)\par
+print("feet2",feet2)\par
+feet=int(feet2)\par
+feet1=feet2-feet\par
+# print(feet)\par
+inch=(feet1)*12\par
+inch=(round(inch,2))\par
+# print(inch)\par
+print(feet,"feet",inch,"inches")\par
+\par
+\par
+#25. Take the Temperature in Celcius and Covert it to Farenheit ..??\par
+\par
+\par
+\par
+c= float(input("enter the *c:"))\par
+f= (c*(9/5))+32\par
+f= round(f,2)\par
+print("*c change to *f = ",f)\par
+k= (c+273)\par
+k= round(k,2)\par
+print("*c to change *k = ",k)\par
+\par
+\par
+f= float(input("enter the *f:"))\par
+c=(f-32)*(5/9)\par
+c= round(c,2)\par
+print("*f change to *c = ",c)\par
+k= (c+273)\par
+k= round(k,2)\par
+print("*c to change *k = ",k)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#26. Compute Prime Factors of an Integer ..??\par
+\par
+n= int(input("enter the no of terms:"))\par
+for i in range(2,n+1):\par
+for j in range(2,i):\par
+if (i%j==0):\par
+break;\par
+else:\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#27. compute the integer factor of any number ..??\par
+\par
+n= int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+if (n%i==0):\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#28. Program to Print Table of a Given Number ..???\par
+\par
+n= int(input("enter the no whose table find:"))\par
+for i in range(1,11):\par
+table= n*i\par
+print(table)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#29. Print Sum of Negative Numbers, Positive Even Numbers and Positive Odd numbers in a List ..??\par
+\par
+\par
+list=[]\par
+n= int(input("enter the list no of terms:"))\par
+for i in range(1,n+1):\par
+m= int(input("enter the no in add list :"))\par
+list.append(m)\par
+# print(list)\par
+sum=0\par
+for x in list:\par
+# print(x)\par
+if (x>0 and x%2==0 ):\par
+print("positive even no:",x)\par
+elif (x<0):\par
+sum=sum+x\par
+else:\par
+print("positive odd no:",x)\par
+print("sum of the negative no:",sum)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#30. Print Largest Even and Largest Odd Number in a List ..??\par
+\par
+\par
+list1=[]\par
+list2=[]\par
+n= int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+m= int(input("enter the no:"))\par
+if (m%2==0):\par
+list1.append(m)\par
+list1.sort()\par
+else:\par
+list2.append(m)\par
+list2.sort()\par
+print("largest even no: =",list1[-1])\par
+print("largest odd no: =",list2[-1])\par
+\par
+#31.  Form an Integer that has the Number of Digits at Ten's Place and the Least Significant Digit of the Entered Integer at One's Place ..??\par
+\par
+\par
+\par
+n=int(input("enter the no :"))\par
+temp=n\par
+count=0\par
+while n>0:\par
+digit=n%10\par
+count=count+1\par
+n = n // 10\par
+# print(count)\par
+rem= temp%10\par
+TR= (count*10) + rem\par
+\par
+print("replace the tenth place to count no: =",TR)\par
+\par
+#32. Find Those Numbers which are Divisible by 7 and Multiple of 5 in a Given Range of Numbers ..??\par
+\par
+\par
+\par
+n= int(input("enter the lower limit:"))\par
+m= int(input("enter the upper limit:"))\par
+for i in range(n,m+1):\par
+if (i%7==0 or i%5==0):\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#33. Check if a Number is an Armstrong Number ..??\par
+\par
+\par
+n= int(input("enter the no :"))\par
+temp=n\par
+k=n\par
+sum=0\par
+while n>0:\par
+digit=n%10\par
+sum=sum+digit**3\par
+n=n//10\par
+print(sum)\par
+if (sum == k):\par
+print("it is a armstrong number.")\par
+else:\par
+print("it is not armstrong number.")\par
+\par
+\par
+#34.  Check if a Number is a Perfect Number  ..??\par
+\par
+\par
+n= int(input("enter the no:"))\par
+k=n\par
+sum=0\par
+for i in range(1,n+1):\par
+if (n%i==0 and n!=i):\par
+# print(i)\par
+sum=sum+i\par
+print(sum)\par
+if (k==sum):\par
+print("perfect no.")\par
+else:\par
+print("not perfect no.")\par
+\par
+\par
+\par
+#35. Python Program to Check if a Number is a Strong Number ..??\par
+# strong no : the sum of the factorials of the digits is equal to the numbers\par
+\par
+\par
+n=int(input("enter the strong number:"))\par
+k=n\par
+sum=0\par
+while n > 0:\par
+i=1\par
+f=1\par
+r=n%10\par
+while i<=r:\par
+f=f*i\par
+i=i+1\par
+sum=sum+f\par
+n//=10\par
+print(sum)\par
+if sum==k:\par
+print("no is strong :")\par
+else:\par
+print("no is not strong :")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#61. Class in which One Method Accepts a String from the User and Another Prints it .??\par
+\fs28\par
+\par
+class print1():\par
+def __init__(self):\par
+self.string = ""\par
+\par
+def get(self):\par
+self.string = input("Enter string: ")\par
+\par
+def put(self):\par
+print("String is:")\par
+print(self.string)\par
+\par
+\par
+obj = print1()\par
+obj.get()\par
+obj.put()\par
+\fs32\par
+#62.    compute the eular's equ. and calculate them....???\par
+\par
+\par
+\par
+def fact(n):                  # define the function of n  used for factorial used .??\par
+fact = 1\par
+while n > 0:\par
+fact =fact* n\par
+n = n - 1\par
+return fact\par
+n=int(input("enter the number of term :"))\par
+x=int(input("enter the value of x:"))\par
+sum=1\par
+for i in range (1,n+1):\par
+sum = sum  +  (x**i) / fact(i)     # used the eular's rule in series form.\par
+print(sum)\par
+#63.     Concatenate Two Dictionaries Into One . :: ??\par
+\par
+d1=\{'a':23,'b':56\}\par
+d2=\{'x':103,'y':12\}\par
+d1.update(d2)\par
+print("mpdify the new dictionaries:",d1)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#64.   Copy the Contents of One File into Another .??\par
+\par
+\par
+with open("test.txt") as f:\par
+with open("out.txt", "w") as f1:\par
+for line in f:\par
+f1.write(line)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#65.  cosine series print and sumation of its:\par
+\par
+\par
+def fact(n):        # define the function of n  used for factorial used .??\par
+fact = 1\par
+while n > 0:\par
+fact*=n\par
+n = n - 1\par
+return fact\par
+n=int(input("enter the number of term :"))\par
+x=int(input("enter the value of x:"))\par
+sum=1\par
+for i in range (1,n+1):\par
+sum = sum + ((((-1)**i)) * (x**(2*i))) / fact(2*i)  # cosine series formula in fact values.\par
+print(sum)\par
+\par
+#66.  Count Number of Lowercase  and upper case Characters in a String & both lower and upper in one string find.  ??\par
+\par
+\par
+string= input("Enter string:")\par
+count=0\par
+for i in string:\par
+if(i.islower()):       # only count for lower case charters .\par
+count=count+1\par
+print("The number of lowercase characters :",count)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#67. count number of uppercase charters in strings. ??\par
+\par
+string= input("Enter string:")\par
+count=0\par
+for i in string:\par
+if(i.isupper()):       # only count for upper case charters .\par
+count=count+1\par
+print("The number of uppercase characters :",count)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#68.  count the upper and lower charter both in one string value of its is the form of any case.??\par
+\par
+string= input("Enter string:")\par
+count1=0\par
+count2=0\par
+for i in string:\par
+if(i.islower()):\par
+count1=count1+1\par
+elif(i.isupper()):\par
+count2=count2+1\par
+print("The number of lowercase characters is:",count1)\par
+print("The number of uppercase characters is:",count2)\par
+\par
+\par
+\par
+\par
+#69.   Count the Frequency of Words Appearing in a String Using a Dictionary.\par
+\par
+\par
+str = input("Enter string:")\par
+l=[]\par
+l= str.split()\par
+word =[l.count(p) for p in l]\par
+print(dict(zip(l,word)))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#70.   Count the Number of Blank Spaces in a Text File .??\par
+\par
+\par
+fname = input("Enter file name: ")\par
+k = 0\par
+\par
+with open(fname, 'r') as f:\par
+for line in f:\par
+words = line.split()\par
+for i in words:\par
+for letter in i:\par
+if (letter.isspace):\par
+k = k + 1\par
+print("Occurrences of blank spaces:",k)\par
+\par
+\par
+\par
+#71.  count the vowel & consonents number of input any strings input by user.??\par
+\par
+\par
+string = input("enter the string name:")\par
+vowels =0\par
+consonents = 0\par
+for i in string:\par
+if (i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):\par
+vowels = vowels+1       # count vowels.\par
+else:\par
+consonents= consonents+1\par
+print("no of vowel in string :",vowels)\par
+print("no of consonent in string :",consonents)\par
+\par
+\par
+\par
+#72. Count the Number of Vowels Present in a String using Sets. ???\par
+\par
+n = input("enter the string:")\par
+vowel = 0\par
+for x in n:  # x in only string value.\par
+if (\par
+x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u' or x == 'A' or x == 'E' or x == 'I' or x == 'O' or x == 'U'):  # condition of\par
+vowel.\par
+vowel = vowel + 1\par
+print(vowel)\par
+\par
+# another mathod to print string and count vowels :?\par
+\par
+s = input("Enter string:")\par
+count = 0\par
+vowels = set("aeiou")  # vowel difine in set sepratly the vowels part. ??\par
+for x in s:\par
+if x in vowels:\par
+# count += 1\par
+count = count + 1\par
+print("Count of the vowels is:", count)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#73.  Count the Number of Words,lines,char in a Text File. ??\par
+\fs24 file=open("word.txt","w")\par
+txt="ram gher jata hai \\nshyam ram ko marta hai \\nshamu ramu ka bhai hai"\par
+file.write(txt)\par
+file.close()\par
+\par
+numline=0\par
+numword=0\par
+numchar=0\par
+\par
+with open("word.txt","r") as file:\par
+for line in file:\par
+wordlist=line.split(" ")\par
+numline= numline+1\par
+numword= numword + len(wordlist)\par
+numchar= numchar+ len(line)\par
+print(numline)\par
+print(numword)\par
+print(numchar)\par
+file.close()\par
+\par
+\par
+\fs32\par
+\par
+#74.   # Count the Occurrences of Each Word in a Given String Sentence.??\par
+\par
+string= input("Enter string:")\par
+word= input("Enter word:")\par
+a=[]\par
+count=0\par
+a=string.split(" ")\par
+for i in range(0,len(a)):\par
+if(word==a[i]):\par
+count=count+1\par
+print("Count of the word is:",count)\par
+\par
+\par
+\par
+#75.    Create a Class and Compute the Area and the Perimeter of the Circle .??\par
+import math\par
+class circle():\par
+def __init__(self, radius):\par
+self.radius = radius\par
+\par
+def area(self):\par
+return math.pi * (self.radius ** 2)\par
+\par
+def perimeter(self):\par
+return 2 * math.pi * self.radius\par
+\par
+\par
+r = int(input("Enter radius of circle: "))\par
+obj = circle(r)\par
+print("Area of circle:", round(obj.area(), 2))\par
+print("Perimeter of circle:", round(obj.perimeter(), 2))\par
+\par
+\par
+\par
+\par
+#76.     count the string of length without used the liberay function..??\par
+\par
+\par
+string = input("enter the string value:")\par
+count=0\par
+for i in string:     # length of the string count charcter in its.?\par
+count = count+1       # count length of string\par
+print(count)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#77.  Create a Class and Get All Possible Subsets from a Set of Distinct Integers .??\par
+\par
+class sub():\par
+def f1(self, s1):\par
+return self.f2([], sorted(s1))\par
+def f2(self, curr, s1):\par
+if s1:\par
+return self.f2(curr, s1[1:]) + self.f2(curr + [s1[0]], s1[1:])\par
+return [curr]\par
+a = []\par
+n = int(input("Enter number of elements of list: "))\par
+for i in range(0, n):\par
+b = int(input("Enter element: "))\par
+a.append(b)\par
+print("Subsets: ")\par
+print(sub().f1(a))\par
+#78.   Create a Class which Performs Basic Calculator Operations .??\par
+\par
+class cal():\par
+def __init__(self, a, b):\par
+self.a = a\par
+self.b = b\par
+\par
+def add(self):\par
+return self.a + self.b\par
+\par
+def mul(self):\par
+return self.a * self.b\par
+\par
+def div(self):\par
+return self.a / self.b\par
+\par
+def sub(self):\par
+return self.a - self.b\par
+\par
+\par
+a = int(input("Enter first number: "))\par
+b = int(input("Enter second number: "))\par
+obj = cal(a, b)\par
+choice = 1\par
+while choice != 0:\par
+print("0. Exit")\par
+print("1. Add")\par
+print("2. Subtraction")\par
+print("3. Multiplication")\par
+print("4. Division")\par
+choice = int(input("Enter choice: "))\par
+if choice == 1:\par
+print("Result: ", obj.add())\par
+elif choice == 2:\par
+print("Result: ", obj.sub())\par
+elif choice == 3:\par
+print("Result: ", obj.mul())\par
+elif choice == 4:\par
+print("Result: ", round(obj.div(), 2))\par
+elif choice == 0:\par
+print("Exiting!")\par
+else:\par
+print("Invalid choice!!")\par
+\par
+print()\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#79.   Create a Dictionary with Key as First Character and Value as Words Starting with that Character.??\par
+\par
+string = input("Enter string:")\par
+l= string.split()\par
+d=\{\}\par
+for word in l:\par
+if(word[0] not in d.keys()):\par
+d[word[0]]=[]\par
+d[word[0]].append(word)\par
+else:\par
+if(word not in d[word[0]]):\par
+d[word[0]].append(word)\par
+for k,v in d.items():\par
+print(k,":",v)\par
+\par
+\par
+#80.     program  Detect if Two Strings are Anagrams .>>\par
+# strings are anagrams - the value of sort form string in order and same word in pattern word\par
+# in incresd order the same number of any word so it is called anagram no.\par
+\par
+n= input("enter the value:")\par
+m= input("enter the value:")\par
+if ((sorted(n)== (sorted(m)))):           # the value of sort used in strings.>>\par
+print("the value of string are anagram.")\par
+else:\par
+print("the value of string are not anagram.")\par
+\par
+\par
+\par
+\par
+\par
+#81.    Determine Whether a Given Number is Even or Odd Recursively .??\par
+\par
+def check(n):\par
+if(n < 2):\par
+return ( n % 2 == 0)\par
+return(check (n-2))\par
+n = int(input("enter the no:"))\par
+if (check(n)== True):\par
+print(' number of even no.')\par
+else:\par
+print(' number of odd no.')\par
+\par
+\par
+\par
+\par
+\par
+\par
+#82. any integer no find the divisor its ....???\par
+\par
+n=int(input("enter the no:"))\par
+for j in range(1,n+1):\par
+if n%j==0:              # print any no form user divisor of its int no..???\par
+print(j)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#83.    Displays which Letters are in the First String but not in the Second .??\par
+\par
+str1= input('enter the string:')\par
+str2= input('enter the string:')\par
+a= set(str1)        # str1 in set form spertly all variable.\par
+b= set(str2)         # str1 in set form spertly all variable.\par
+c= a-b               # variable of the a is not to be b .\par
+# print(c)        # print set form.\par
+for x in c:\par
+print(x)          # all set value loop from .\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#84.     Displays which Letters are in the Two Strings but not in Both ..??\par
+\par
+str1= input('enter the string:')\par
+str2= input('enter the string:')\par
+a= set(str1)         # a in set form of string value.\par
+b= set(str2)         # b in set form of string value.\par
+# e = a^b     (a to bitwise b = a union b - a intersection b)\par
+c= a.union(b)        # a and b string charter to both combined but not repeat write once.\par
+d= a.intersection(b)     # a and b commom charter print.\par
+e=c-d       # charter are two string but not in both = union of a and b - intersection of a and b.\par
+# ( a ^ b = a U b - a intersetion b )\par
+for x in e:\par
+print(x)\par
+\par
+\par
+\par
+\par
+#85.   Displays which Letters are Present in Both the Strings . ??\par
+# union of two string value :\par
+str1= input('enter the string:')\par
+str2= input('enter the string:')\par
+a= set(str1)        # str1 in set form spertly all variable.\par
+b= set(str2)         # str1 in set form spertly all variable.\par
+c= a.union(b)         # c= a|b   ( '|'  - union symbol )\par
+# variable of the a is not to be b .\par
+# print(c)\par
+#  print set form.\par
+for x in c:\par
+print(x)\par
+# Intersection of two string value :\par
+\par
+str1= input('enter the string:')\par
+str2= input('enter the string:')\par
+a= set(str1)        # str1 in set form spertly all variable.\par
+b= set(str2)         # str1 in set form spertly all variable.\par
+c= a.intersection(b)\par
+# variable of the a and b all str in commom charter print .\par
+# print(c)\par
+#  print set form.\par
+for x in c:\par
+print(x)\par
+\par
+\par
+\par
+\par
+\par
+\par
+#86.     any no which is divisable by input no ....???\par
+n=int(input("entre the value:"))\par
+m=int(input("enter the divide no:"))\par
+for i in range(1,n+1):\par
+if i%m==0:\par
+print(i)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#87.    filehandle ..??\par
+\par
+filehandle = open("D:{{\field{\*\fldinst{HYPERLINK "\\\\\\\\message.txt"}}{\fldrslt{\ul\cf1\\\\message.txt","w}}}}\f0\fs32 ")\par
+txt= "NAME   \\tsalary \\nsaurabh ganguly   \\t2500   \\nSandeep chaturvedi   \\t5000   \\nrabina   \\t7500   \\nnaager   \\t10000."\par
+filehandle.write(txt)\par
+filehandle.close()\par
+\par
+filehandle = open("message.txt","a")\par
+print(filehandle.read())\par
+filehandle.close()\par
+\par
+\par
+\par
+\par
+\par
+\par
+#88.    Find All Numbers which are Odd and Palindromes Between a Range of Numbers without using Recursion.??\par
+\par
+a=[]\par
+l=int(input("Enter lower limit: "))\par
+u=int(input("Enter upper limit: "))\par
+a=[x for x in range(l,u+1) if x%2!=0 and str(x)==str(x)[::-1]]\par
+print("The numbers are: ",a)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#89.  find the gravitetional force in given two object of form f=Gm1m2/r**2\par
+\par
+m1=int(input("enter the 1st object  mass:"))\par
+m2=int(input("enter the 2nd object  mass:"))\par
+r=int(input('enter the radius of object:'))\par
+G= 6.67*(10**(-11))             # put tha value of G.\par
+f= ( G*m1*m2/(r**2))            # formula of gravitatinal force :...>>\par
+print("the gravitational force of two object F = Gm1m2/r**2 = ",f)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#90.    Find if a Number is Prime or Not Prime Using Recursion ..??\par
+\par
+n= int(input("enter the prime no:"))\par
+\par
+def check(n):\par
+k = 0\par
+isprime = True          # true key is prime no  search and check both .??\par
+for i in range(2, (n // 2) + 1):\par
+if (n % i == 0):\par
+k = k + 1\par
+if (k <= 0):\par
+return isprime\par
+else:\par
+isprime = False\par
+return isprime\par
+check(n)\par
+# print(check(n))\par
+if check(n)==True:\par
+print("prime no")\par
+else:\par
+print(" not prime no")\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#91.  find the second largest number in list...??\par
+\par
+list=[]\par
+n= int(input("enter the no of term:"))\par
+for i in range(1,n+1):\par
+m=int(input("enter the number:"))\par
+list.append(m)       # add the number in list.\par
+list.sort()          # list in sequence form (less to greater order)\par
+print("print the second largest number in list:",list[-2])   # find the second largest no of list.\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#92.      Find the Area of a Rectangle Using Classes .??\par
+\par
+class rectangle():\par
+def __init__(self, breadth, length):\par
+self.breadth = breadth\par
+self.length = length\par
+\par
+def area(self):\par
+return self.breadth * self.length\par
+\par
+a = int(input("Enter length of rectangle: "))\par
+b = int(input("Enter breadth of rectangle: "))\par
+obj = rectangle(a, b)\par
+print("Area of rectangle:", obj.area())\par
+print()\par
+\par
+\par
+#93.   Find the Binary Equivalent of a Number Recursively ...??\par
+\par
+l=[]\par
+def convert(b):\par
+if(b==0):\par
+return l\par
+dig=b%2\par
+l.append(dig)\par
+convert(b//2)\par
+a=int(input("Enter a number: "))\par
+convert(a)\par
+l.reverse()\par
+print("Binary equivalent:")\par
+for i in l:\par
+print (i)\par
+\par
+\par
+#94.   Find the Binary Equivalent of a Number without Using Recursion.??\par
+\par
+n=int(input("Enter a number: "))\par
+a=[]\par
+while(n>0):\par
+dig=n%2\par
+a.append(dig)\par
+n=n//2\par
+a.reverse()\par
+print("Binary Equivalent is: ")\par
+for i in a:\par
+print(i,end=" ")\par
+\par
+\par
+\par
+\par
+\par
+#95.    Find the Factorial of a Number Using Recursion . ??\par
+\par
+def fact(n):\par
+if(n <= 1):\par
+return 1\par
+else:\par
+return(n*fact(n-1))     # n multiply the no of n-1 elements no which n is not equal to 1 and less than .\par
+n = int(input("Enter number:"))\par
+print("Fact:",fact(n))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#96.     find the factorial of a number without recursion.??\par
+\par
+n = int(input("enter the no of term:"))\par
+i=1\par
+fact =1\par
+while i < n+1:\par
+fact = fact*i\par
+i=i+1\par
+print(fact)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#97.      Find the Fibonacci Series Using Recursion . ??\par
+\par
+def fibo(n):\par
+if(n <= 1):\par
+return n\par
+else:\par
+return(fibo(n-1) + fibo(n-2))\par
+n = int(input("Enter number of terms:"))\par
+for i in range(n):\par
+print(fibo(i))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#98.     Find the Fibonacci Series without Using Recursion\par
+\par
+n = int(input("enter the no of term:"))\par
+a = 0\par
+b = 1\par
+print(a)\par
+print(b)\par
+sum=1\par
+for i in range(2,n):\par
+c= a+b\par
+a = b\par
+b = c\par
+print(c)\par
+sum= sum+c\par
+print("fibonacci series:",sum)\par
+\par
+\par
+#99.   find the largest number in list..??\par
+\par
+list=[]\par
+n= int(input("enter the no of term:"))\par
+for i in range(1,n+1):\par
+m=int(input("enter the number:"))\par
+list.append(m)\par
+list.sort()\par
+print(max(list))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#100.    Find the Length of a List Using Recursion .??\par
+\par
+def length(lst):\par
+if not lst:\par
+return 0\par
+return 1 + length(lst[1::2]) + length(lst[2::2])\par
+a=[1,2,3]\par
+print("Length of the string is: ")\par
+print(a)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#101.  print the two list and print the its intersection in any list.  ??\par
+\par
+# find the intersection  of two lists..??\par
+list3=[]\par
+list1=[]\par
+list2=[]\par
+n=int(input('enter the no of terms list1:'))\par
+for i in range(1,n+1):\par
+m= int(input('enter the no:'))\par
+list1.append(m)\par
+list1.sort()\par
+x=int(input('enter the no of term list2:'))\par
+for j in range(1,x+1):\par
+y= int(input('enter the no:'))\par
+list2.append(y)\par
+list2.sort()\par
+# print(list1)\par
+# print(list2)\par
+list3=list1+list2           # add list1 and list2 form.\par
+# print(list3)\par
+A=set(list1)              # set list1 change A in asigne same B in asigne list2.>>>\par
+B=set(list2)\par
+D=A.intersection(B)             # print the A intersection B value in D asigne form.>>>\par
+# print(D)\par
+E=list(D)                      # set convert in list form of E.\par
+print(E)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#102. Program to Find all Numbers in a Range which are Perfect Squares and Sum of all Digits in the Number is Less than 10\par
+\par
+list=[]\par
+n= int(input("enter the lower limit:"))\par
+m= int(input("enter the upper limit:"))\par
+i=1\par
+while i < m+1:      # i is greater than upper limit +1 times .\par
+n=i*i               # find the perfect square in lower limit to upper limit in range.\par
+i = i + 1\par
+print(n)\par
+list.append(n)\par
+print(list)\par
+\par
+\par
+\par
+#103.   Find the Power of a Number Using Recursion ???\par
+\par
+x= int(input("enter the base no."))\par
+y= int(input("enter the power no."))\par
+def power(x,y):\par
+return(x**y)\par
+power(x,y)\par
+print("the power of the number:",power(x,y))\par
+\par
+# Find the Power of a Number Using Recursion ???\par
+# y= int(input("enter the power no."))\par
+def sqr(x):\par
+return(x**2)\par
+sqr(x)\par
+print("the square of the number:",sqr(x))\par
+\par
+# Find the cube of a Number Using Recursion ???\par
+# y= int(input("enter the power no."))\par
+def cube(x):\par
+return(x**3)\par
+cube(x)\par
+print("the cube of the number:",cube(x))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#104.    Find the Product of two Numbers Using Recursion ..??\par
+\par
+x= int(input("enter the 1st no:"))\par
+y= int(input("enter the 2nd no."))\par
+def mul(x,y):\par
+return x*y\par
+mul(x,y)\par
+print("multiplies of two no. ", mul(x,y))\par
+\par
+# Find the sum of two Numbers Using Recursion ..??\par
+def sum(x,y):\par
+return x+y\par
+sum(x,y)\par
+print("sum of two no. ", sum(x,y))\par
+\par
+# Find the difference of two Numbers Using Recursion ..??\par
+def diff(x,y):\par
+return x-y\par
+diff(x,y)\par
+print("diffenrence  of two no. ",diff(x,y))\par
+\par
+# Find the division of two Numbers Using Recursion ..??\par
+def div(x,y):\par
+return x/y\par
+div(x,y)\par
+print("divison of two no. ", div(x,y))\par
+\par
+# Find the integer division  of two Numbers Using Recursion ..??\par
+def int_div(x,y):\par
+return x//y\par
+int_div(x,y)\par
+print("integer division of two no. ",int_div(x,y))\par
+\par
+\par
+# Find the mod of two Numbers Using Recursion ..??\par
+def mod(x,y):\par
+return x%y\par
+mod(x,y)\par
+print("modulus/ remainder of two no. ", mod(x,y))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#105.   Find the Sum of Digits in a Number without Recursion.??\par
+\par
+l=[]\par
+b=int(input("Enter a number: "))\par
+while(b>0):\par
+dig=b%10\par
+l.append(dig)\par
+b=b//10\par
+print("Sum is:",sum(l))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#106.   Find the Sum of Elements in a List Recursively..??\par
+\par
+def sum_arr(arr,size):\par
+if (size == 0):\par
+return 0\par
+else:\par
+return arr[size-1] + sum_arr(arr,size-1)\par
+n=int(input("Enter the number of elements for list:"))\par
+a=[]\par
+for i in range(0,n):\par
+element=int(input("Enter element:"))\par
+a.append(element)\par
+print("The list is:",a)\par
+b=sum_arr(a,n)\par
+print("Sum of items in list:",b)\par
+\par
+\par
+#107.       find the union of two lists..??\par
+list3=[]\par
+list1=[]\par
+list2=[]\par
+n=int(input('enter the no of terms list1:'))\par
+for i in range(1,n+1):\par
+m= int(input('enter the no:'))\par
+list1.append(m)\par
+list1.sort()\par
+x=int(input('enter the no of term list2:'))\par
+for j in range(1,x+1):\par
+y= int(input('enter the no:'))\par
+list2.append(y)\par
+list2.sort()\par
+# print(list1)\par
+# print(list2)\par
+list3=list1+list2      # add list3 in list1 and  list2.\par
+A= set(list3)           # oprate the set of list(3) remove the commom number print one time.??\par
+# print(A)\par
+B= list(A)            # set in change the list form .??\par
+print(B)\par
+\par
+\par
+# other mathod to use the union of the two list values in any list varriable value..>>>\par
+\par
+\par
+list3=[]\par
+list1=[]\par
+list2=[]\par
+n=int(input('enter the no of terms list1:'))\par
+for i in range(1,n+1):\par
+m= int(input('enter the no:'))\par
+list1.append(m)\par
+list1.sort()\par
+x=int(input('enter the no of term list2:'))\par
+for j in range(1,x+1):\par
+y= int(input('enter the no:'))\par
+list2.append(y)\par
+list2.sort()\par
+A=set(list1)      # list convert in set.\par
+B=set(list2)\par
+C=A.union(B)       # union key in used the value of C.\par
+# print(C)\par
+D=list(C)\par
+print(D)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#108.      find the sum of the x power series . 1+x**2/2!+x**3/3!+---- ??\par
+\par
+def fact(n):\par
+fact = 1\par
+while n > 0:\par
+fact *= n\par
+n = n - 1\par
+return fact\par
+list=[]\par
+n=int(input("enter the number of term :"))\par
+x=int(input("enter the value of x:"))\par
+sum=1\par
+for i in range (1,n+1):\par
+sum = sum + (x**(i+1))/fact(i+1)\par
+print(sum)\par
+#109.  Flatten a List without using Recursion .??\par
+\par
+a=[[1,[[2]],[[[3]]]],[[4],5]]\par
+flat =lambda l: sum(map(flat,l),[]) if isinstance(l,list) else [l]\par
+print(flat(a))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#110.   Flatten a Nested List using Recursion .??\par
+\par
+def flatten(S):\par
+if S == []:\par
+return S\par
+if isinstance(S[0], list):\par
+return flatten(S[0]) + flatten(S[1:])\par
+return S[:1] + flatten(S[1:])\par
+s=[[1,2],[3,4]]\par
+print("Flattened list is: ",flatten(s))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#111.    Form a Dictionary from an Object of a Class.??\par
+\par
+d = \{'a':1,'b':2,'c':3,'d':4\}\par
+print("Initial dictionary",d)\par
+key= input("Enter the key to delete:")\par
+if key in d:\par
+del d[key]\par
+else:\par
+print("Key not found!")\par
+exit(0)\par
+print("Updated dictionary",d)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#112.  GCD (highest common factor) of the two numbers ..>>\par
+\par
+\par
+n=int(input("enter the 1st num."))\par
+m=int(input("enter the 2nd num."))\par
+while m!=n:\par
+if m>n:\par
+m=m-n\par
+else:\par
+n=n-m\par
+print("print the GCD numbers of two num. :",m)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#113.  Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x*x)....??\par
+\par
+n=int(input("Enter a number:"))\par
+d=\{x:x*x for x in range(1,n+1)\}\par
+print("number and its square in dict.",d)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#114.     hcf of two no. of the Number Recursively ..??\par
+x= int(input("enter the 1st no."))\par
+y= int(input("enter the 2nd no."))\par
+def hcf(x,y):\par
+if (x==0):\par
+return y\par
+if (y==0):\par
+return x\par
+return hcf(y,x%y)\par
+print(hcf(x,y))\par
+\par
+\par
+# lcm of the two number recursively ..??\par
+\par
+x= int(input("enter the 1st no."))\par
+y= int(input("enter the 2nd no."))\par
+def gcd(x,y):\par
+if (x==0):\par
+return y\par
+if (y==0):\par
+return x\par
+return gcd(y,x%y)\par
+print(gcd(x,y))\par
+LCM = (x*y)//gcd(x,y)       # integer division of the values.\par
+# LCM = int(LCM)         # diviser of integer then not change lcm in int . but division of no so change in int form.\par
+print("two no of lcm =",LCM)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#115.   How Many Times a Given Letter Occurs in a String Recursively .??\par
+\par
+def check(string,ch):\par
+if not string:\par
+return 0\par
+elif string[0] == ch:\par
+return 1 + check(string[1:], ch)\par
+else:\par
+return check(string[1:], ch)\par
+string = input("Enter string:")\par
+ch = input("Enter character to check:")\par
+print("Count is:",check(string, ch))\par
+\par
+\par
+\par
+\par
+\par
+#116.  # LCM (least common factor) of the two numbers ..>>\par
+n=int(input("enter the 1st num."))\par
+m=int(input("enter the 2nd num."))\par
+a=m\par
+b=n\par
+while m!=n:\par
+if m>n:\par
+m=m-n\par
+else:\par
+n=n-m\par
+print("HCF =",m)\par
+LCM = (a*b)/m\par
+LCM = int(LCM)\par
+print("LCM =",LCM)\par
+\par
+\par
+#117.   find the programm List of Words and Return the Length of the Longest One.  >>>\par
+\par
+\fs28 list1 =['shyam','gopi','raju','ghanshyam','babloo','sita','chuve']\par
+list1.sort(key=len)\par
+print(list1)\par
+print(list1[-1])\par
+\par
+# another mathod used for string length return value is longest one...>>\par
+\par
+list1=[]\par
+n=int(input("enter the no of terms:"))\par
+for x in range(1,n+1):\par
+m=input("enter the value:")\par
+list1.append(m)\par
+list1.sort(key=len)\par
+print(list1)\par
+print(list1[-1])\par
+\par
+\fs32 #118.  multiply all the items in dictionary.??\par
+\par
+d=\{'A':10,'B':10,'C':239\}\par
+total =1\par
+for i in d:\par
+total =total *d[i]\par
+print(total)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#119.   New String Made of the First 2 and Last 2 characters From a Given String .??\par
+\par
+string= input("Enter string:")\par
+count=0\par
+for i in string:\par
+count=count+1\par
+new=string[0:2]+string[count-2:count]       # two given string only add charter first two and last two charter.\par
+print("Newly formed string is:",new)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#120.   nth index remove the string charter value form.>>>\par
+\par
+def remove(string, n):\par
+first = string[:n]\par
+last = string[n+1:]\par
+return first + last                       # remove last charter in string values.\par
+string = input("Enter the sring:")\par
+n = int(input("Enter the index of the character to remove:"))\par
+print("Modified string:")\par
+print(remove(string, n+1))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#121.      print the pascal triangle in given rows....???\par
+\par
+n=int(input("Enter number of rows: "))\par
+a=[]\par
+for i in range(n):\par
+a.append([])\par
+a[i].append(1)\par
+for j in range(1,i):\par
+a[i].append(a[i-1][j-1]+a[i-1][j])\par
+if(n!=0):\par
+a[i].append(1)\par
+for i in range(n):\par
+print("   "*(n-i),end=" ",sep=" ")\par
+for j in range(0,i+1):\par
+print('\{0:6\}'.format(a[i][j]),end=" ",sep=" ")\par
+print()\par
+#122.   Find the Cumulative Sum of a List where the ith Element is the Sum of the First i+1 Elements From The Original List\par
+\par
+list1=[]\par
+list2=[]\par
+n =int(input('enter the no of term:'))\par
+for x in range(1,n+1):\par
+m = int(input("enter the no:"))\par
+list1.append(m)\par
+print(list1)      # input value by user add in list form.\par
+sum=0\par
+for y in list1:\par
+# print(y)\par
+sum = sum+y\par
+#  print(sum)\par
+list2.append(sum)      # print the sum of the input values in any list2 is print .\par
+print(list2)\par
+#123.     New String  two list value where the First Character and the Last Character have been Exchanged.\par
+\par
+def change(string):               # define change key.\par
+return string[-1:]+ string[1:-1]+ string[:1]      # modify key formula in any change (string)value..\par
+m= input("enter the value:")\par
+n= input("enter the value:")\par
+print("modify string",change(string=m))\par
+print("modify string",change(string=n))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#124.   print the Put Even and Odd elements in a List into Two Different Lists ..>>\par
+\par
+list1=[]                # print even no.\par
+list2=[]                # print odd no.\par
+n=int(input("enter the no of terms:"))\par
+for i in range(1,n+1):\par
+m =int(input("enter the no:"))\par
+if m%2==0:                        # even no print from list1 and after add this value in list1.\par
+list1.append(m)\par
+\par
+else:\par
+list2.append(m)\par
+print(list1)\par
+print(list2)\par
+\par
+#125.    Compute a Polynomial Equation given that the Coefficients of the Polynomial are stored in a List\par
+list=[]\par
+n= int(input("enter the no of terms:"))\par
+x= int(input("enter the no of terms:"))\par
+for i in range(0,n):\par
+#  print(i)\par
+m= int(input("enter the no:"))\par
+list.append(m)\par
+sum = 0\par
+for i in range(len(list)):\par
+sum = sum + list[i]*(x ** ((len(list)-1)-i))       # calculate the value of x in panomial cacul...>>\par
+print(sum)\par
+\par
+\par
+\par
+\par
+#126.    print all number in with used loop in range value (1,upper) :...??\par
+\par
+def printno(upper):      # define the upper key:\par
+if(upper>0):           # condition of the upper is greater to 0.\par
+printno(upper-1)       # less 1 in no print on screen .\par
+print(upper)\par
+upper= int(input("enter the upper limit number:"))\par
+printno(upper)                 # print numbers.\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#127.  find the quetiont and remainder both ::\par
+n=int(input('enter the value:'))\par
+m=int(input('enter the value:'))\par
+q= n//m\par
+print("quetiont:",q)\par
+r=n%m\par
+print("remainder:",r)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#128.  Generate Random Numbers from 1 to 20 and Append Them to the List:   ...>>\par
+# random value -- the value of no is surpised to you for any value and print them any num...??\par
+import random\par
+list=[]\par
+n=int(input("enter the no:"))\par
+for i in range(n):\par
+list.append(random.randint(1,20))        # it is formula used in the range of any int numbers...??\par
+# any int num print the random of any integer no.\par
+print(" random number in list: ",list)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#129. Reads a Text File and Counts the Number of Times a Certain Letter Appears in the Text File ..??\par
+\par
+fname = input("Enter file name: ")\par
+l = input("Enter letter to be searched:")\par
+k = 0\par
+\par
+with open(fname, 'r') as f:\par
+for line in f:\par
+words = line.split()\par
+for i in words:\par
+for letter in i:\par
+if (letter == l):\par
+k = k + 1\par
+print("Occurrences of the letter:")\par
+\par
+\par
+\par
+#130.  Reads a Text File and Counts the Number of Times a Certain Letter Appears in the Text File ..??\par
+\par
+fname = input("Enter file name: ")\par
+l = input("Enter letter to be searched:")\par
+k = 0\par
+\par
+with open(fname, 'r') as f:\par
+for line in f:\par
+words = line.split()\par
+for i in words:\par
+for letter in i:\par
+if (letter == l):\par
+k = k + 1\par
+print("Occurrences of the letter:")\par
+\par
+\par
+\par
+#131.Read a Text File and Print all the Numbers Present in the Text File .??\par
+\par
+fname = input("Enter file name: ")\par
+\par
+with open(fname, 'r') as f:\par
+for line in f:\par
+words = line.split()\par
+for i in words:\par
+for letter in i:\par
+if (letter.isdigit()):\par
+print(letter)\par
+\par
+\par
+\par
+\par
+\par
+\par
+#132.  # Read the Contents of a File in Reverse Order .??\par
+\par
+filename=input("Enter file name: ")\par
+for line in reversed(list(open(filename))):\par
+print(line.rstrip())\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#133.    Remove the Characters of Odd Index Values in a String .??\par
+\par
+def remove(string):      # define the string key.\par
+final = ""               # final= space\par
+for i in range(len(string)):    # in range i for len of string.\par
+if i % 2 == 0:                 # condition final print:\par
+final = final + string[i]\par
+return final                      # call final value.\par
+string = input("Enter string:")\par
+print("Modified string is:",remove(string))            # print string which remove odd charters parts.\par
+\par
+\par
+\par
+\par
+\par
+#134.       Remove the Duplicate Items from a List .\par
+\par
+list1=[]\par
+list2=[]\par
+list3=[]\par
+n= int(input("enter the no of term."))\par
+for i in range(1,n+1):\par
+m =int(input("enter the no:"))\par
+list1.append(m)\par
+list1.sort()\par
+y= int(input("enter the no of term."))\par
+for j in range(1,y+1):\par
+z=int(input("enter the no:"))\par
+list2.append(z)\par
+list2.sort()\par
+list3 = list(set(list1+list2))     # change set to list again print list.\par
+print(list3)\par
+#135.   Remove the Given Key from a Dictionary.??\par
+\par
+class A(object):\par
+def __init__(self):\par
+self.A = 1\par
+self.B = 2\par
+obj1= A()\par
+print(obj1.__dict__)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#136.       the print remove the same elements in list ..??\par
+\par
+list1=[]\par
+list2=[]\par
+list3=[]\par
+n= int(input("enter the no of term :"))\par
+for i in range(1,n+1):\par
+m = input("enter the word:")\par
+list1.append(m)\par
+list1.sort(key=len)\par
+y= int(input("enter the no of term :"))\par
+for j in range(1,y+1):\par
+z = input("enter the word:")\par
+list2.append(z)\par
+list2.sort(key=len)\par
+list3 = list(set(list1+list2))\par
+print(list3)\par
+#137.    replace a to $ and A to $ string function any number.??\par
+\par
+string= input("Enter string:")\par
+string=string.replace('a','$')     # a replace on $.\par
+string=string.replace('A','$')\par
+print("Modified string:",string)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#138.   Reverse a String Using Recursion . ??\par
+\par
+def reverse(str):\par
+reversed_str= ""\par
+for i in str:\par
+reversed_str = i+reversed_str\par
+print("reverse of string:",reversed_str)\par
+str= input("enter the string:")\par
+print("enter the string :",str)\par
+reverse(str)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#139.   Reverse a String without using Recursion .??\par
+\par
+a=str(input("Enter a string: "))\par
+print("Reverse of the string is: ",a[::-1])\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#140.  reverse array step.??\par
+\par
+arr = [1,2,3,4,5,6]\par
+# d= int(input('enter the no of reverse:'))\par
+def reverse(arr,n):\par
+temp = arr[n]\par
+for i in range(n,0,-1):\par
+\par
+\par
+arr[i]=arr[i-1]\par
+arr[0]= temp\par
+# for i in range(d):\par
+reverse(arr,5)\par
+print(arr)\par
+\par
+\par
+\par
+\par
+#141.  find the reverse numbers:....???\par
+n=int(input("enter the value:"))\par
+sum=0\par
+while n>0:\par
+r=n%10\par
+sum=sum*10+r\par
+n//=10\par
+print(sum)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#142.  find the programm  to Search the Number of Times a Particular Number Occurs in a List . ??\par
+\par
+list=[]\par
+n= int(input("enter the no of term:"))\par
+x=int(input("enter the search no:"))\par
+for i in range(1,n+1):\par
+m=int(input("enter the number:"))\par
+list.append(m)\par
+count=0\par
+for k in list:\par
+if k==x:\par
+count=count+1\par
+print(count)\par
+\par
+\par
+\par
+\par
+#143.  using the sceond largest number using the bubble sort. mathod. >>>\par
+\par
+a=[]\par
+n=int(input("Enter number of elements:"))\par
+for i in range(1,n+1):\par
+b=int(input("Enter element:"))\par
+a.append(b)\par
+for i in range(0,len(a)):\par
+for j in range(0,len(a)-i-1):\par
+if(a[j]>a[j+1]):\par
+temp=a[j]\par
+a[j]=a[j+1]\par
+a[j+1]=temp\par
+print('Second largest number is:',a[n-2])\par
+\par
+\par
+\par
+list=[]\par
+n=int(input("enter the value:"))\par
+i=1\par
+for i in range(1,n+1):\par
+\par
+if n%i==0:                   # condition the no of hers factors .....??\par
+list.append(i)\par
+i=i+1\par
+print(max(list))                          # min / max value find out numbers of integer value..??\par
+print(min(list))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#144. using the sort list according to second sublist mathod.  >>\par
+\par
+a=[['a',34],['b',21],['c',64]]            # print list in sublist from.\par
+for i in range(1,len(a)):                # range of list a  in length .\par
+for j in range(0,(len(a)-i-1)):          # range of j is from len(a)-i-1 .\par
+if a[j][1]> a[j+1][1]:           # condition of the list value according to the sublist value .\par
+temp = a[j]                  # store the value in temp = value a[j]\par
+a[j]=a[j+1]                  # a[j] has incresed value in list.\par
+a[j+1]=temp                  # a[j+1] in store are equal to temp again.\par
+print(a)\par
+\par
+#145.  sort list according to the len of list element ..??\par
+# print any value in string type . any number or name both in string form..>>\par
+list=[]\par
+n = int(input("enter the no of term:"))\par
+for i in range(1,n+1):\par
+m = input("enter the no:")      # m value in string type not any integer type.\par
+list.append(m)\par
+list.sort(key=len)                    # list of key sort in length . >>\par
+print(list)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#146.   any sort  value in tuple is increased in list form and sort them value in tuple values :..>>\par
+\par
+def last(n):          # define the key function...>>\par
+return n[-1]\par
+\par
+def sort(tuples):                              # sort the tuple at the last key mathod.\par
+return sorted(tuples, key=last)\par
+\par
+list = [(2,2),(1,4),(1,3)]       # print list in tuple.\par
+l = sort(list)        # sort list increased in tuple form. >>\par
+print(l)\par
+\par
+\par
+\par
+\par
+#147.  Take in a String and Replace Every Blank Space with Hyphen means -(-)  ...??\par
+\par
+string1 =input('enter the name of string:')\par
+string = string1.replace(" ","-")     # it is replace value in sapce to hyphen(-).\par
+print("modified string value:",string)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#148..   string read and append to any string in file:  ??\par
+\par
+str= input('enter the string')\par
+file= open("word.txt","a")\par
+file.write(str)\par
+file.close()\par
+with open("word.txt","r") as file:\par
+print(file.read())\par
+file.close()\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#149. Sum All the Items in a Dictionary.??\par
+\par
+d=\{'A':100,'B':540,'C':239\}\par
+print("total sum of value in dict.",sum(d.values()))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#150.   sum of the 1+1/2+1/3+1/4 ------ numbers .\par
+\par
+n=int(input("enter the number:"))\par
+sum=0\par
+for i in range (1,n+1):\par
+# print(i)\par
+sum=sum+(1/i)      # because not print 1/n series number not print(i).\par
+print(" 1/n numbers sum = ",sum)\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#151.     print the list value- Swap the First and Last Value of a List.  >>\par
+\par
+list1 = []\par
+n= int(input("enter the no of terms:"))\par
+for x in range(1,n+1):\par
+m= int(input("enter the no:"))\par
+list1.append(m)\par
+# print(list1)\par
+A=list1[0]          # A in asigne value in list1[0]; after all list1[0] value in list1[-1]; after\par
+# value A print in list[-1]\par
+list1[0]=list1[-1]\par
+list1[-1] = A\par
+print(list1)\par
+\par
+\par
+\par
+#152.  sum of n power or x numbers series not factorial form :  1+ x**2/2+x**3/3+----\par
+\par
+n= int(input("enter the no of term:"))\par
+x=int(input("enter the value:"))\par
+sum = 1\par
+if n==0:\par
+print("0")\par
+else:\par
+for i in range(2,n+1):\par
+#  print(i)\par
+sum = sum + (x**i)/i        # print the series and calculate the series value..??\par
+print(sum)\par
+\par
+\par
+\par
+\par
+#153.     Take in Two Strings and Display the Larger String without Using Built-in Functions .??\par
+string1= input("Enter first string:")\par
+string2= input("Enter second string:")\par
+count1=0\par
+count2=0\par
+for i in string1:\par
+count1=count1+1\par
+print("length of string1:",count1)\par
+for j in string2:\par
+count2=count2+1\par
+print("length of string2:",count2)\par
+if(count1<count2):\par
+print("Larger string is:",string2)\par
+elif(count1==count2):\par
+print("Both strings are equal.")\par
+else:\par
+print("Larger string is:",string1)\par
+#154.   tally match project...??\par
+\par
+\par
+n = int(input("enter the entries:"))\par
+arr=[]\par
+name_arr=[]\par
+cls_arr=[]\par
+mob_arr=[]\par
+address_arr=[]\par
+salary_arr=[]\par
+for i in range(0,n):\par
+name = input("enter the name:")\par
+if len(name)<=15:\par
+print(name)\par
+else:\par
+print("maximum limit of charters.")\par
+cls = int(input("enter the class:"))\par
+if (cls>0 or cls<=12):\par
+print(cls)\par
+else:\par
+print("not found class.")\par
+mob = int(input("enter the mob.:"))\par
+if len(str(mob))<=10:\par
+print(mob)\par
+else:\par
+print("maximum no of mob.")\par
+address = input("enter the address:")\par
+if len(address)<=20:\par
+print(address)\par
+else:\par
+print("address lenght is not fully space.")\par
+salary = int(input("enter the salary:"))\par
+name_arr.append(name)\par
+cls_arr.append(cls)\par
+mob_arr.append(mob)\par
+address_arr.append(address)\par
+salary_arr.append(salary)\par
+file = open("ram.txt","w")\par
+file.write('NAME\\tCLASS\\tMOB\\tADD\\tSAL\\n')\par
+for j in range(n):\par
+file.write(name_arr[j]+ "\\t" + str(cls_arr[j])+ "\\t" + str(mob_arr[j])+ "\\t" + address_arr[j]+ "\\t" + str(salary_arr[j])+ "\\n")\par
+# integer change in string then add the print statement ..??\par
+#   print(name_arr[j],cls_arr[j],mob_arr[j],address_arr[j],salary_arr[j])\par
+file.close()\par
+file = open("ram.txt","r")\par
+file1 = open("shyam.txt","w")\par
+while True:\par
+line= file.readline()\par
+if len(line)==0:\par
+break\par
+f=line.split('\\t')\par
+a=','.join(f)\par
+file1.write(a)\par
+file.close()\par
+file1.close()\par
+z= input("enter the search name:")\par
+file1= open("shyam.txt","r")\par
+while True:\par
+line= file1.readline()\par
+if len(line)==0:\par
+break\par
+x= line.split(',')\par
+if x[0]==z:\par
+print(x[0],x[1],x[2],x[3],x[4])\par
+break\par
+\par
+file1.close()\par
+\par
+#155.     the Sum of the Digits of the Number Recursively ...???\par
+\par
+n= int(input("enter the no:"))\par
+def sum_digit(n):\par
+if(n==0):\par
+return 0\par
+else:\par
+return n%10 + sum_digit(n//10)\par
+print(sum_digit(n))\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+#156.   Total Sum of a Nested List Using Recursion .??\par
+\par
+def sum1(lst):\par
+total = 0\par
+for element in lst:\par
+if (type(element) == type([])):\par
+total = total + sum1(element)\par
+else:\par
+total = total + element\par
+return total\par
+print( "Sum is:",sum1([[1,2],[3,4]]))\par
+\par
+\par
+\par
+\par
+\par
+\par
+#157.    Create a List of Tuples with the First Element as the Number and Second Element as the Square of the Number:..??\par
+\par
+\par
+\par
+list=[]\par
+n= int(input("enter the no of lower limit:"))\par
+m= int(input("enter the no of upper limit:"))\par
+x=n\par
+for x in range(n,m+1):\par
+list1=(x,x**2)      # tuple form in used in list1...??\par
+list.append(list1)       # list value add in list values.\par
+print(list)\par
+\par
+\par
+\par
+#158.  print the two list and merge it and after the list sort. >>\par
+# putting the value of the list in users. >>\par
+list1=[4,5,6,8,75,98,108]\par
+list2 =[45,52,2,3,6,11,13]\par
+list=list1+list2\par
+list.sort()\par
+print(list)\par
+\par
+# another form in list input the user combined and sort it .>>\par
+# input the value from user and combined it in list form. >>\par
+list=[]\par
+list1=[]\par
+list2=[]\par
+n=int(input("enter the no of term in 1st list:"))\par
+for i in range(1,n+1):\par
+a= int(input("enter the no:"))\par
+list1.append(a)                                      # add a value in list1.\par
+# print(list1)\par
+m=int(input("enter the no of term in 2nd list:"))\par
+for j in range(1,m+1):\par
+b= int(input("enter the no:"))                       # add b value in list2.\par
+list2.append(b)\par
+# print(list2)\par
+list=list1+list2  # list1 and list2 are merge in list [].>>\par
+list.sort()\par
+print(list)\par
+}
+ 

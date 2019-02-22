@@ -1,0 +1,64 @@
+1. install django by command
+pip install django
+or
+pip install django==version
+
+2. create project by typing command
+
+django-admin startproject projectname
+
+3. change directory by command
+
+cd projectname
+
+4. create module thats called apps by typing command
+
+python manager.py startapp appname
+
+5. open setting.py file from project folder and add app name in installed_app section
+
+6. for table creation open models.py file and wirite the code.
+
+7. register model name in admin.py file by typing
+
+admin.site.register(model class name)
+
+8. save all files and go on command prompt
+
+python manage.py migrate
+
+9. python manage.py makemigrations
+
+10. python manage.py createsuperuser
+
+	username
+	email	optional
+	password must be more than or equals to 8 character
+	retype password 
+11. python manage.py migrate
+	
+	
+12. python manage.py runserver
+
+13. open browser and type
+
+	http://localhost:8000/admin
+	
+page creation
+
+12. open new file and save as forms.py 
+
+13. open views.py and create function for opening html files
+
+14. open new file and save in templates folder which are in apps folder.
+
+15. open urls.py file from project folder and import views.py file and add path with url.
+
+16. python manage.py migrate
+
+17. python manage.py runserver
+
+	or
+	python manage.py runserver newportno
+	
+	

@@ -1,0 +1,10 @@
+a= int(input("enter the a value :"))
+b= int(input("enter the b value :"))
+c= int(input("enter the c value :"))
+d= int(input("enter the d value :"))
+e= int(input("enter the e value :"))
+f= int(input("enter the f value :"))
+g= int(input("enter the g value :"))
+h= int(input("enter the h value :"))
+result= a*b-(c/d)+e%(f//g)**h
+print(result)

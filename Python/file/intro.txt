@@ -1,0 +1,3 @@
+Renaming and Deleting Files
+Python os module provides methods that help you perform file-processing operations, such as renaming and deleting files.
+To use this module you need to import it first and then you can call any related functions.

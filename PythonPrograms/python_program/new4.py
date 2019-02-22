@@ -1,0 +1,11 @@
+from tkinter import *
+root=Tk()
+f=open("record.txt")
+a=f.read()
+root.geometry('500x500')
+root.title("Registration Form")
+label_0=Label(root,text="Registration Form",width=20,font=("bold",20))
+label_0.place(x=90,y=53)
+label_1=Label(root,text=a,font=("bold",10))
+label_1.place(x=80,y=130)
+root.mainloop() 
